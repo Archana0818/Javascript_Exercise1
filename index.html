@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> In Class 1</title>
+
+		<script>
+				function getInformation()
+				{
+					var firstName = prompt("Enter your first name");
+					var lastName = prompt("Enter your last name");
+					var userName = firstName + "." + lastName;
+					document.getElementById("buttonOne").innerHTML ="your user name is " + userName;
+				}
+
+				function getNickName()
+				{
+					var nickName = prompt("Enter your nick name");
+					document.getElementById("buttonTwo").innerHTML = "Your nick name is " + nickName;
+				}
+
+
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1> Welcome to Inclass Task 1</h1>
+
+		<p> Here I have created two buttons. If you click first button named "Create Username" it will ask you to enter your first name and then last name and then will show you user name assigned to you.</p>
+
+		<p> When you click second button named "Nick Name" it will ask you to enter you nick name and then your nick name will be displayed on the screen.</p>
+
+		<h3> Please click the button below to create your user name</h3>
+
+		<p>	<input type="button" id="firstButton" value="Creat Username"
+			onclick = "getInformation()" >
+		</p>
+
+		<p id="buttonOne">
+		</p>
+
+		<h3> Please click the button below to create your nick name</h3>
+
+		<p><input type="button" id="secondButton" value="Nick Name"
+			onclick = "getNickName()">
+		</p>
+
+		<p id="buttonTwo">
+		</p>
+
+
+	</body>
+
+</html>
